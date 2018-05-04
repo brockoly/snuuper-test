@@ -14,7 +14,7 @@ Test:
 
 This project was made using Node.js version 9.8.0 which you need to install and you can find and download [here](https://nodejs.org/en/download/releases/).
 
-After installing Node you should clone or download this repository into your local machine and open a terminal in the location of the project to initialize NPM with the following command:
+After installing Node you should clone or download this repository into your local machine, open a terminal in the location of the project and initialize NPM with the following command:
 
 ```
 npm install
@@ -29,7 +29,7 @@ Once NPM finish installing you can start the web server with the following comma
 ```
 node app.js
 ```
-This command will start you web server on your [localhost:3000](localhost:3000).
+This command will start you web server on your [localhost:3000](http://localhost:3000).
 
 Data Base is set up using RDS AWS and its connection properties are set on **./db/sequelize.js**, if you want to run this data base locally you can change the parameters of the connection:
 ```javascript
@@ -51,4 +51,4 @@ To test the web server you can refer to the [API Collection](https://documenter.
 
 ## Authors
 
-* **Andrés Meneses** - [snuuper-test](https://github.com/brockoly)
+* **Andrés Meneses** - [brockoly](https://github.com/brockoly)
