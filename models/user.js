@@ -13,14 +13,16 @@ const User = db.sequelize.define('MOCK_DATA', {
         type: db.Sequelize.STRING,
         validate: {
             notEmpty: true,
-            isAlpha: true
+            isAlpha: true,
+            len:[1,50]
         }
     },
     email: {
         type: db.Sequelize.STRING,
         validate: {
             notEmpty: true,
-            isEmail:true
+            isEmail:true,
+            len:[1,50]
         }
     },
     password: {
@@ -32,7 +34,8 @@ const User = db.sequelize.define('MOCK_DATA', {
     username: {
         type: db.Sequelize.STRING,
         validate: {
-            notEmpty: true
+            notEmpty: true,
+            len:[1,50]
         }
     },
     token: {
