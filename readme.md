@@ -32,9 +32,6 @@ Test:
 
 ```
 
-### Break down into end to end tests
-
-
 ## Built With
 
 * [Node.js](https://nodejs.org/en/)
