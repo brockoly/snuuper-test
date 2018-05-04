@@ -10,27 +10,37 @@ Test:
 
 
 ## Getting Started
+### Installation
 
+This project was made using Node.js version 9.8.0 which you need to install and you can find and download [here](https://nodejs.org/en/download/releases/).
 
-
-### Prerequisites
-
-
-```
+After installing Node you should clone or download this repository into your local machine and open a terminal in the location of the project to initialize NPM with the following command:
 
 ```
-
-### Installing
-
+npm install
 ```
 
+This will automatically add a node_modules folder into the project and install every dependency you need for the project to work, this dependencies are configured on package.json.
+
+
+## Running and testing the web server
+
+Once NPM finish installing you can start the web server with the following command on the terminal:
+```
+node app.js
+```
+This command will start you web server on your [localhost:3000](localhost:3000).
+
+Data Base is set up using RDS AWS and its connection properties are set on **./db/sequelize.js**, if you want to run this data base locally you can change the parameters of the connection:
+```javascript
+const dataBase = '';
+const user = '';
+const password = '';
+const host =  '';
+const port = '';
 ```
 
-## Running the tests
-
-```
-
-```
+To test the web server you can refer to the [API Collection](https://documenter.getpostman.com/view/4276010/user/RW1ekxYf) on POSTMAN.
 
 ## Built With
 
