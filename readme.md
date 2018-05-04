@@ -31,7 +31,7 @@ node app.js
 ```
 This command will start you web server on your [localhost:3000](http://localhost:3000).
 
-Data Base is set up using RDS AWS and its connection properties are set on **./db/sequelize.js**, if you want to run this data base locally you can change the parameters of the connection:
+Data Base is set up using RDS AWS and its connection properties are set on `./db/sequelize.js`, if you want to run this data base in a different server you can run the script `.db/Users.sql` on an MSSQL server and then change the parameters of the connection to point to your server:
 ```javascript
 const dataBase = '';
 const user = '';
