@@ -34,9 +34,12 @@ const User = db.sequelize.define('MOCK_DATA', {
         validate: {
             notEmpty: true
         }
+    },
+    token: {
+        type: db.Sequelize.STRING
     }
   }, {
     timestamps: false
   });
 
-module.exports = {User};
+module.exports = User;
